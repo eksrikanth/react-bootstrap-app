@@ -32,7 +32,7 @@ class Employees extends Component {
               <div className="card-body">
                 <div className="col-xl-10">
                   <div className="row">
-                    <div className="col-xl-4">{e.Email}</div>
+                    <div className="col-xl-4 border">{e.Email}</div>
                     <div className="col-xl-8">
                       <div className="row">
                         <div className="col-xl-6">Email</div>

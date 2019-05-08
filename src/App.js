@@ -1,12 +1,15 @@
 import React from "react";
-import logo from "./logo.svg";
 import "./App.css";
-import Employees from "./employeeComponent/employees";
+import HeaderComponent from "./components/headerComponent";
+import MainContentComponent from "./components/mainContentComponent";
+import FooterComponent from "./components/footerComponent";
 
 function App() {
   return (
     <div className="container">
-      <Employees />
+      <HeaderComponent />
+      <MainContentComponent />
+      <FooterComponent />
     </div>
   );
 }
