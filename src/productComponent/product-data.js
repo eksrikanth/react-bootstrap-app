@@ -35,13 +35,25 @@ const products = [
     id: "6",
     name: "Rubber Duckies",
     price: 3.5,
-    description: "Doesn't hurt, its made out of Rubber!!."
+    description: "To help you solve your hardest coding problem."
   },
   {
     id: "7",
     name: "Electric Car",
     price: 300,
     description: "/month , Plug into the Present!."
+  },
+  {
+    id: "8",
+    name: "Fidget Spinner",
+    price: 21.99,
+    description: "Because we like to pretend we're in high school !."
+  },
+  {
+    id: "9",
+    name: "Sticker Set",
+    price: 14.99,
+    description: "To prove to other devs you know a lot."
   }
 ];
 export default products;
