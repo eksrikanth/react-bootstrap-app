@@ -1,14 +1,16 @@
 import React from "react";
 
-function Todos(props) {
-  return (
-    <div>
-      <h3 className="form-control">
-        <input type="checkbox" defaultChecked={props.todo.completed} /> .
-        {props.todo.text}
-      </h3>
-    </div>
-  );
+class Todos extends React.Component {
+  render() {
+    return (
+      <div>
+        <h3 className="form-control">
+          <input type="checkbox" defaultChecked={this.props.todo.completed} /> .
+          {this.props.todo.text}
+        </h3>
+      </div>
+    );
+  }
 }
 
 export default Todos;
