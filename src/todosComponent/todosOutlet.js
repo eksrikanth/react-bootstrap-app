@@ -6,6 +6,7 @@ class TodoOutlet extends React.Component {
   constructor() {
     super();
     this.state = {
+      isLoaded: false,
       todoArr: todoData
     };
   }
