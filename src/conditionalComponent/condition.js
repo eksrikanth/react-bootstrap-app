@@ -8,4 +8,3 @@ function Condition(props) {
 }
 
 export default Condition;
-// test
