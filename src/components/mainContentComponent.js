@@ -4,6 +4,7 @@ import PlaceKitten from "../placeKittenComponent/placekitten";
 import Product from "../productComponent/productOutlet";
 import Jokes from "../jokeComponent/jokeOutlet";
 import Todos from "../todosComponent/todosOutlet";
+import Conditional from "../conditionalComponent/conditionalOutlet";
 
 function MainContentComponent() {
   return (
@@ -12,7 +13,8 @@ function MainContentComponent() {
       {/* <PlaceKitten /> */}
       {/* {<Product />} */}
       {/* <Jokes /> */}
-      <Todos />
+      {/* <Todos /> */}
+      {<Conditional />}
     </main>
   );
 }
