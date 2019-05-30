@@ -5,7 +5,8 @@ export default class FormOutlet extends React.Component {
     super();
     this.state = {
       firstname: "",
-      lastname: ""
+      lastname: "",
+      address: ""
     };
     this.onChange = this.onChange.bind(this);
   }
@@ -21,7 +22,19 @@ export default class FormOutlet extends React.Component {
         let user = data.results[0];
         this.setState({
           firstname: user.name.first,
-          lastname: user.name.last
+          lastname: user.name.last,
+          address:
+            "Street: " +
+            user.location.street +
+            "\n" +
+            "City: " +
+            user.location.city +
+            "\n" +
+            "State: " +
+            user.location.state +
+            "\n" +
+            "ZipCode: " +
+            user.location.postcode
         });
       });
   }
@@ -50,7 +63,18 @@ export default class FormOutlet extends React.Component {
             onChange={this.onChange}
           />
         </label>
-        <br />
+        <br /> <br />
+        <label>
+          Address:
+          <textarea
+            style={{ width: 300, height: 150 }}
+            name="address"
+            value={this.state.address}
+            placeholder="Address"
+            onChange={this.onChange}
+          />
+        </label>
+        <br /> <br />
         Your name: {this.state.firstname} {this.state.lastname}
       </form>
     );
