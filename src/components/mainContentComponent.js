@@ -6,6 +6,7 @@ import Jokes from "../jokeComponent/jokeOutlet";
 import Todos from "../todosComponent/todosOutlet";
 import Conditional from "../conditionalComponent/conditionalOutlet";
 import ButtonLogin from "../button-login/buttonLoginOutlet";
+import Forms from "../formComponent/formOutlet";
 
 function MainContentComponent() {
   return (
@@ -16,7 +17,8 @@ function MainContentComponent() {
       {/* <Jokes /> */}
       {/* <Todos /> */}
       {/* {<Conditional />} */}
-      {<ButtonLogin />}
+      {/* {<ButtonLogin />} */}
+      <Forms />
     </main>
   );
 }
