@@ -6,13 +6,18 @@ export default class FormOutlet extends React.Component {
     this.state = {
       firstname: "",
       lastname: "",
-      address: ""
+      address: "",
+      isFriendly: false,
+      pic: "",
+      gender: ""
     };
     this.onChange = this.onChange.bind(this);
   }
   onChange(event) {
-    const { name, value, type, check } = event.target;
-    this.setState({ [name]: value });
+    const { name, value, type, checked } = event.target;
+    type === "checkbox"
+      ? this.setState({ [name]: checked })
+      : this.setState({ [name]: value });
   }
   componentDidMount() {
     fetch("https://randomuser.me/api/")
@@ -23,6 +28,9 @@ export default class FormOutlet extends React.Component {
         this.setState({
           firstname: user.name.first,
           lastname: user.name.last,
+          isFriendly: true,
+          gender: user.gender,
+          pic: user.picture.large,
           address:
             "Street: " +
             user.location.street +
@@ -74,6 +82,40 @@ export default class FormOutlet extends React.Component {
             onChange={this.onChange}
           />
         </label>
+        <br /> <br />
+        <label>
+          <input
+            type="checkbox"
+            name="isFriendly"
+            checked={this.state.isFriendly}
+            onChange={this.onChange}
+          />{" "}
+          Is Friendly
+        </label>
+        <br /> <br />
+        <label>
+          <input
+            type="radio"
+            name="gender"
+            value={this.state.gender}
+            checked={this.state.gender === "male"}
+            onChange={this.onChange}
+          />{" "}
+          Male
+        </label>
+        <br /> <br />
+        <label>
+          <input
+            type="radio"
+            name="gender"
+            value={this.state.gender}
+            checked={this.state.gender === "female"}
+            onChange={this.onChange}
+          />{" "}
+          Female
+        </label>
+        <br /> <br />
+        <img name="pic" src={this.state.pic} />
         <br /> <br />
         Your name: {this.state.firstname} {this.state.lastname}
       </form>
