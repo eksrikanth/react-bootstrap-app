@@ -1,0 +1,46 @@
+{
+  "results": [
+    {
+      "gender": "female",
+      "name": { "title": "miss", "first": "eva", "last": "rose" },
+      "location": {
+        "street": "2463 victoria street",
+        "city": "truro",
+        "state": "dyfed",
+        "postcode": "Z1B 6LP",
+        "coordinates": { "latitude": "6.9360", "longitude": "97.6808" },
+        "timezone": {
+          "offset": "+4:00",
+          "description": "Abu Dhabi, Muscat, Baku, Tbilisi"
+        }
+      },
+      "email": "eva.rose@example.com",
+      "login": {
+        "uuid": "5c393ee5-4d35-4009-8e45-05f9f6185d60",
+        "username": "goldenbird419",
+        "password": "devin",
+        "salt": "2ovaaMb6",
+        "md5": "81ef7a7480af2f765e1ce6bab1f6f31b",
+        "sha1": "af9bc22c8eeb4136ae6ff5cdf204ebecf9b36832",
+        "sha256": "c391efeb1e89f8a1494ef37038217b0eaea43cd7a20ccdefb5f075e746c25996"
+      },
+      "dob": { "date": "1996-10-21T06:32:07Z", "age": 22 },
+      "registered": { "date": "2012-05-07T03:37:26Z", "age": 7 },
+      "phone": "015395 55720",
+      "cell": "0770-328-675",
+      "id": { "name": "NINO", "value": "XA 33 20 40 Y" },
+      "picture": {
+        "large": "./assets/images/94.jpg",
+        "medium": "./assets/images/94.jpg",
+        "thumbnail": "./assets/images/94.jpg"
+      },
+      "nat": "GB"
+    }
+  ],
+  "info": {
+    "seed": "6a9f35dc868f7316",
+    "results": 1,
+    "page": 1,
+    "version": "1.2"
+  }
+}
